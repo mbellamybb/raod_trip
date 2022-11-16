@@ -1,0 +1,108 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  body{
+    margin: 0;
+    background-color: rgb(174, 174, 190);
+  }
+  
+  h1, h2{
+    text-align: center;
+  }
+  
+  ul{
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  li{
+    width: 94px;
+    height: 65px;
+    margin-left: 0px;
+  }
+  li:first-child{
+    margin-right: 100px;
+  }
+  
+  button{
+    color: blue;
+  }
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  #daybutton{
+    text-align: center;
+  }
+  #nightbutton{
+    text-align: center;
+  }
+  li>img{
+    height: 120px;
+    width: 120px;
+  }
+  
+  #roadtrip{
+    height: 65vh;
+    width: 70vw;
+    margin: 4.5rem auto;
+    background:url('https://i.ibb.co/NWHTMmR/Let-s-take-a-road-trip.png');
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
+    overflow-y: hidden;  
+  }
+  
+  #surface{
+    height: 50px;
+    width: 500%;
+    background-image: url('https://i.ibb.co/D7TF9Sc/surface.png');
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
+  }
+  
+  #van{
+    position: absolute;
+    bottom: 1%;
+    left: 24%;
+    animation: motion 1s linear infinite;
+  }
+  
+  
+  
+  /*Animation*/
+  
+  @keyframes moveRight{
+    100%{transform: translateX(-2950px)}
+  }
+  
+  @keyframes motion{
+    100%{
+      transform: translateY(-1.5px);
+    }
+    50%{
+     transform: translateY(3px); 
+    }
+    0%{
+      transform: translateY(-1.5px);
+    }
+  }
+  
