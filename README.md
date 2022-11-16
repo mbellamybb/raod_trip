@@ -1,2 +1,2 @@
-# raod_trip
+# road_trip
 Bare bones road trip selector
